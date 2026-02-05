@@ -8,25 +8,17 @@
 </head>
 <body>
 
+  <div class="hero">
+    <button id="themeToggle" class="btn">
+      🌙 Modo oscuro
+    </button>
+  </div>
+
   <header class="hero hero--header">
     <h1>Hola, soy Fran 👋</h1>
     <p>Desarrollador Full Stack en formación</p>
     <a href="#projects" class="btn">Ver proyectos</a>
   </header>
-
-  <div class="hero">
-    <button id="themeToggle" class="btn">
-      🌙 Modo oscuro
-    </button>
-    <button id="contactBtn" class="btn">
-      contactame 😊
-    </button>
-
-    <section id="contactSection" class="hidden">
-      <p>📧 Email: franciscoleiva1320@gmail.com</p>
-      <p>💼 LinkedIn: linkedIn.com/FranLeiva1320</p>
-    </section>
-  </div>
 
   <section class="about">
     <h2>Sobre mí</h2>
@@ -49,6 +41,45 @@
       <p>Aplicaciones full stack en desarrollo.</p>
     </div>
   </section>
+
+    <div class="hero">
+      <button id="contactBtn" class="btn">
+      contactame 😊
+      </button>
+      <section id="contactSection" class="hidden">
+      <p>📧 Email: franciscoleiva1320@gmail.com</p>
+      <p>💼 LinkedIn: linkedIn.com/FranLeiva1320</p>
+      </section>
+    </div>
+
+  <section class="contact">
+  <h2>Contacto</h2>
+
+  <form id="contactForm">
+    <input 
+      type="text" 
+      id="name"
+      placeholder="Tu nombre"
+    >
+
+    <input 
+      type="email"
+      id="email"
+      placeholder="Tu email"
+    >
+
+    <textarea 
+      id="message"
+      placeholder="Tu mensaje"
+    ></textarea>
+
+    <button type="submit" class="btn">
+        Enviar 🚀
+    </button>
+    
+  </form>
+  <p id="status"></p>
+</section>
 
   <footer>
     <p>© 2026 – Fran</p>
