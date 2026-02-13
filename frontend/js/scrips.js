@@ -52,7 +52,7 @@ contactForm.addEventListener("submit", async (e) => {
     }
     status.textContent = "✅ Mensaje enviado correctamente";
     status.style.color = "green";
-    await fetch ("http://localhost:3000/contacto", {
+    const res = await fetch ("http://localhost:3000/contacto", {
         method: "POST",
         headers: {
             "Content-type": "application/json",
@@ -67,6 +67,7 @@ contactForm.addEventListener("submit", async (e) => {
         throw new Error("Error al enviar mensaje");
     }
     alert ("mensaje enviado");
+    console.log("mensaje enviado");
     submitBtn.disabled = true;
     submitBtn.textContent = "Enviando...";
     contactForm.reset();
